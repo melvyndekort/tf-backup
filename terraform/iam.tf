@@ -22,7 +22,8 @@ data "aws_iam_policy_document" "lmbackup" {
   }
   statement {
     actions = [
-      "kms:GenerateDataKey"
+      "kms:GenerateDataKey",
+      "kms:Decrypt"
     ]
 
     resources = [
