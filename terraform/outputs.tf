@@ -10,3 +10,11 @@ output "backup_application_key" {
 output "backup_bucket" {
   value = aws_s3_bucket.backup.id
 }
+
+output "b2_consolidated_bucket_name" {
+  value = b2_bucket.mdekort_backup.bucket_name
+}
+
+output "b2_consolidated_bucket_id" {
+  value = b2_bucket.mdekort_backup.bucket_id
+}
