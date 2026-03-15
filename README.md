@@ -167,7 +167,7 @@ make encrypt  # Re-encrypt secrets after editing
 
 1. AWS credentials configured (via `assume` command)
 2. Terraform >= 1.0
-3. Access to `mdekort.tfstate` S3 bucket
+3. Access to `mdekort-tfstate-075673041815` S3 bucket
 4. KMS key `alias/generic` exists (managed in tf-aws)
 
 ### Standard Workflow
