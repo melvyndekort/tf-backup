@@ -33,8 +33,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "backup" {
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm     = "aws:kms"
-      kms_master_key_id = data.terraform_remote_state.tf_aws.outputs.generic_kms_alias_arn
+      sse_algorithm = "AES256"
     }
   }
 }
